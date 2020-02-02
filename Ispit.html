@@ -22,7 +22,7 @@
 <input type="text" id="valuta"> Code valute <br>
 <input type="text" id="indexrazmjene"> Odnos sa Eur
 <br>
-<button name="snimi" value="snimi" onclick="snimi()">Snimi</button>
+<button name="snimi" value="snimi" onclick="snimiPodatke()">Snimi</button>
 <br><br>
 <div id="accordion" >
   <!--
@@ -39,9 +39,9 @@
     <input type="text" id="valuta" placeholder="CODE Izvorne valute">  <br>
     <input type="text" id="indexrazmjene" placeholder="Iznos razmjene"> 
     <br>
-    <input type="text" id="valuta" placeholder="CODE Destinacijske valute"> <br>
+    <input type="text" id="valuta" placeholder="CODE Destinacijske valute" class="valuta"> <br>
     <br>
-    <button name="snimi" value="snimi">Konvertuj</button>
+    <button name="snimi" value="snimi" onclick="konverzija()">Konvertuj</button>
     <br>
     <br>
     <input type="text" id="indexrazmjene"> Obračunati iznos
