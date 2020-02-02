@@ -1,6 +1,62 @@
-.sadrzaj{
-background-color: white;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+a {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+.header {
+    display: grid;
+    background-color: lightgray;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 35px;
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    text-align: center;
+    background-color: gray;
+    
+}
+
+ul li a {
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+
+/* .sadrzaj{
+background-color: white;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+
+.lijevi {
+    background: gray;
+    width: 20%;
+} */
+
+
+/* Footer */
+.footer {
+    display: grid;
+    padding: 10px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 35px;
 }
