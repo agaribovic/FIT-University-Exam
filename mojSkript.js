@@ -5,17 +5,21 @@
         var imePrezime = document.getElementById("username").value;
         var godina = document.getElementById("godinaupisa").value;
         var ime = imePrezime.slice(0, 2);
-  
-        for(var i = 0; i < imePrezime.length; i++) {
-  
-            if(imePrezime[i] == ' ') {
-                var prezime = imePrezime.slice(i+1, i+5);
-            }
-        }
+
+        if(imePrezime != '') {
+
+          for(var i = 0; i < imePrezime.length; i++) {
+    
+              if(imePrezime[i] == ' ') {
+                  var prezime = imePrezime.slice(i+1, i+5);
+              }
+          }
   
         var email = (ime + '.' + prezime + '-' + godina + '@edu.fit.ba').toLowerCase();
         document.getElementById("email").value = email;
-  
+      
+      }
+
     }
   
     function validacijaImePrezime() {
@@ -58,10 +62,7 @@
         document.getElementById("godinaupisa").style.border = '1px solid red';
         return false;
      }
-  
-  
-  
-  
+
     }
   
     function validacijaIndexa() {
@@ -87,9 +88,7 @@
           return false;
   
       }
-  
-  
-  
+
   }
   
     function snimiPodatke() {
@@ -113,23 +112,20 @@
         div.innerHTML = localStorage.getItem("indexRazmjene");
         document.getElementById("accordion").appendChild(div);
   
-  /*
+  
       if(valuta == localStorage.getItem("valuta")) {
   
         var prompt = confirm("Code valute vec postoji u „bazi podataka“. Da li želite promijeniti vrijednost za tu valutu?");
           
-        if (prompt == true) {
+        if (prompt) {
   
-          localStorage.setItem("indexRazmjene", 522);
+          localStorage.setItem("indexRazmjene", Math.floor(Math.random() * 100) + 1);
           div.innerHTML = localStorage.getItem("indexRazmjene");
           document.getElementById("accordion").appendChild(div);
   
-           
-          } else {
-              
-          }
+          } 
   
-        } */
+        } 
   
       } 
   
@@ -137,53 +133,25 @@
   
     function konverzija() {
   
-      var codeIzvorneValute = document.getElementById("valuta").value;
-      var iznosRazmjene = document.getElementById("indexrazmjene").value;
-      var codeDestinacijskeValute = document.getElementsByClassName("valuta").value;
-  
-      var valute = {
-  
-        "USD": {
-          "vrijednost": 1234564
-        },
-        "CAD": {
-          "vrijednost": 6534
-        },
-        "EUR": {
-          "vrijednost": 23456
-        },
-        "AED": {
-          "vrijednost": 34554
-        },
-        "AFN": {
-          "vrijednost": 3455
-        },
-        "ALL": {
-          "vrijednost": 3245
-        },
-        "AMD": {
-          "vrijednost": 234545
-        },
-        "ARS": {
-          "vrijednost": 23453
-        },
-        "AUD": {
-          "vrijednost": 234545
-        },
-        "AZN": {
-          "vrijednost": 324432
-        },
-        "BAM": {
-          "vrijednost": 2345
-        },
+
+      var rates = {
+        
+        "CAD": 1.565,
+        "CHF": 1.1798,
+        "GBP": 0.87295,
+        "SEK": 10.2983,
+        "EUR": 1.092,
+        "USD": 1.2234
   
       }
   
-    for (i = 0; i < valute.length; i++) {
+      for(i in rates) {
+        
+       /*
+       */
   
-           console.log(value.) + "<br>";
-    
-    }
+        console.log(i + ':' + rates[i]);
+      }
   
-  
-    }
+   
+}
