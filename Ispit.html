@@ -61,6 +61,40 @@
 			<input type="submit" value="Prijavi se" onclick=""/>
 		
 	</form>	
+
+<div class="sadrzaj">
+    <div class="lijevi">
+        <div class="lijeviUnitrasnji">
+<h2>Konverter Valuta</h2>
+
+<div class="lijeviSrednji">
+<input type="text" id="valuta"> Code valute <br>
+<input type="text" id="indexrazmjene"> Odnos sa Eur
+<br>
+<button name="snimi" value="snimi" onclick="snimiPodatke()">Snimi</button>
+<br><br>
+<div id="accordion" >
+  <!--
+    <h3>USD</h3>
+    <div>USD-EUR 0.86</div>
+    <h3>GBP</h3>
+    <div>GBP-EUR 1.14</div>
+    <h3>JPY</h3>
+    <div>JPY-EUR 0.0078</div>
+  -->
+  </div>
+</div>
+<div class="lijeviDonji">
+    <input type="text" id="valuta" placeholder="CODE Izvorne valute">  <br>
+    <input type="text" id="indexrazmjene" placeholder="Iznos razmjene"> 
+    <br>
+    <input type="text" id="valuta" placeholder="CODE Destinacijske valute" class="valuta"> <br>
+    <br>
+    <button name="snimi" value="snimi" onclick="konverzija()">Konvertuj</button>
+    <br>
+    <br>
+    <input type="text" id="indexrazmjene"> Obračunati iznos
+  
 </div>
 </div>
 </section>
