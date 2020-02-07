@@ -1,17 +1,66 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-   <meta charset =UTF-8>   
-   <title>Ispitni zadatak</title>
-   <script type="text/javascript" src="mojSkript.js"></script>
-  <script src="external/jquery/jquery.js"></script>
-  <script src="jquery-ui.js"></script>
-   <link rel="stylesheet" type="text/css" href="stilovi.css">
-   <link href="jquery-ui.css" rel="stylesheet">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title></title>
+	<link rel="stylesheet" href="stilovi.css">
 </head>
 <body>
 
+<div class="sidenav">	
+	sssss
+</div>
+
+<section id="main">
+	<div class="header">
+		<div class="container">
+			<h2>ISPIT</h2>
+		</div>
+	</div>
+	<ul>
+		<li><a href="Programiranje I">Programiranje I</a></li>
+		<li><a href="WRD">WRD</a></li>
+		<li><a href="Klikni za jos">Klikni za jos</a></li>
+		<li><a href="SP">SP</a></li>
+	</ul>
+<div class="sign-in">
+	<form action="">
+		<h3><center>PRIJAVI SE</center></h3>
+		<br>
+		<hr>
+		<br>
+			<label for="username" id="labelusername">Vaše ime i prezime</label>
+			<input type="text" id="username" name="username" onblur="validacijaImePrezime">
+			<span id="error"></span>
+			<br><br>
+		
+		
+			<label for="brindeksa"	id="labelbrindeksa">Indeks/Godina:</label>
+			<input type="text1" id="brindeksa" name="brindeksa" onblur="validacijaIndexa()"/>
+			<span id="error3"></span>
+			<input type="text" id="godinaupisa" name="godinaupisa" onblur="validacijaGodina()"/>
+			<br><br>
+		
+		
+			<label for="omiljenaoblast">Omiljena oblast</label>
+			<select name="omiljenaoblast" id="omiljenaoblast">
+				<option value="Programiranje">Programiranje</option>
+				<option value="WRD">WRD</option>
+				<option value="Baze podataka">Baze podataka</option>
+				<option value="SI">SI</option>
+			</select>
+			<br><br>
+		
+		
+			<label for="email" id="labelemail">Predložena email adresa</label>
+			<input type="email" id="email" name="email" onclick="napraviemail()"/>
+			<br><br>
+		
+			<input type="submit" value="Prijavi se" onclick=""/>
+		
+	</form>	
 
 <div class="sadrzaj">
     <div class="lijevi">
@@ -48,82 +97,28 @@
   
 </div>
 </div>
-      </div>
-    <div class="desni">
-        <div class="desniGornji">
-            <div class="firma1">
-                <br>
-                <p>ISPIT</p>
-              </div>
-            <div class="izborSrednji">
-                <ul id="listaSrednja">
-                <li class="izborLinije"><a href="">Programiranje I</a></li>
-                <li class="izborLinije"><a href="">WRD</a></li>
-                <li class="izborLinije">Klikni za jos
-                    <ul id="listaUgn">
-                        <li class="izborLinijeUg"><a href="">Programiranje I</a></li>
-                        <li class="izborLinijeUg"><a href="">WRD</a></li>
-                        <li class="izborLinijeUg">PSR</li>
-                        <li class="izborLinijeUg">SP</li>
-                    </ul>
-                </li>
-                <li class="izborLinije">SP</li>
-            </ul></div>
-          </div>
-          <div class="desniSrednji">
-            <div class=".desniSrednjiunutrasnji">
-              <form  id="forma">
-                  <center><h3>Prijavi se</h3></center><br /><br /><hr />
-                  <p>
-                      <label for="username" id="labelusername">Vaše ime i prezime</label>
-                      <input type="text" id="username" name="username"  onblur="validacijaImePrezime()"/>
-                      <span id="error"></span>
-      
-                  </p>
-      
-                   <p>
-                      <label for="brindeksa" id="labelbrindeksa" style=" display:inline" >Indeks / Godina:</label>
-                      <input  type="text" id="brindeksa" name="brindeksa" style=" width: 50px" onblur="validacijaIndexa()"/> 
-                      <span id="error3"></span>
-                      <input type="text" id="godinaupisa" name="godinaupisa" style=" width: 50px"  onblur="validacijaGodina()"/>
-                      <span id="error2"></span>
-                  </p>
-             
-                   <label>Omiljena oblast:</label>
-                  <select name="izbor">
-                      <option>Programiranje</option>
-                      <option>WRD</option>
-                      <option>Baze podataka</option>
-                      <option>SI</option>
-                  </select>
-  
-                  <p>
-                      <label for="email" id="labelemail" >Predložena email adresa</label>
-                      <input type="email" id="email" name="email" onclick="napraviEmail()"/>
-                  </p>
-                  <input type="submit" id="save" value="Prijavi se" onclick="" />                        
+</section>
 
-              </form>
-            </div>
-          </div>
-          <div class="desniDonji">
-            <div class="firma">
-              <br>
-              <p>&copy;Copyright FIT Ispit 2018</p>
-            </div>
-          </div>
-    </div>
+<footer>
+	<span>&copy; Copjiojkjk</span>
+</footer>
 
+
+<!-- <section id="header">
+	<div class="container">
+	<div class="container-fluid">
+		<h3>ISPIT</h3>
+	</div>
 </div>
+		<ul>
+			<li><a href="Programiranje I">Programiranje I</a></li>
+			<li><a href="WRD">WRD</a></li>
+			<li><a href="Klikni za jos">Klikni za jos</a></li>
+			<li><a href="SP">SP</a></li>
+		
+	</div>
+</section> -->
 
 
 </body>
-<script>
-    $( "#accordion" ).accordion({
-      heightStyle: "content"
-    });
-
-    
- 
-</script>
 </html>
