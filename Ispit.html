@@ -24,15 +24,16 @@
 		<input type="text" id="valuta" style="color:white"> Code valute <br>
 		<input type="text" id="indexrazmjene"> Odnos sa Eurima 
 		<br>
-		<button type="submit" value="submit">Snimi</button>
+		<button type="submit" value="submit" onclick="snimiPodatke()">Snimi</button>
 	<div id="accordion">
+		<!--
 		<h3>USD</h3>
 		<p>USD-EUR 0.86</p>
 		<h3>GBP</h3>
 		<p>USD-GBP 1.14</p>
 		<h3>JPY</h3>
 		<p>EUR-JPY 0.0078</p><br>
-		
+	-->
 	</div>
 	<div>
 		
@@ -65,16 +66,20 @@
 		<hr>
 		<br>
 			<label for="username" id="labelusername">Vaše ime i prezime</label>
-			<input type="text" id="username" name="username" onblur="validacijaImePrezime">
+			<input type="text" id="username" name="username" onblur="validacijaImePrezime()">
 			<span id="error"></span>
 			<br><br>
 		
 		
 			<label for="brindeksa"	id="labelbrindeksa">Indeks/Godina:</label>
 			<input type="text1" id="brindeksa" name="brindeksa" onblur="validacijaIndexa()"/>
-			<span id="error3"></span>
+			
 			<input type="text" id="godinaupisa" name="godinaupisa" onblur="validacijaGodina()"/>
-			<br><br>
+			<span id="error2"></span>
+			<br>
+			<span id="error3"></span>
+			<br>
+			
 		
 		
 			<label for="omiljenaoblast">Omiljena oblast</label>
@@ -88,7 +93,7 @@
 		
 		
 			<label for="email" id="labelemail">Predložena email adresa</label>
-			<input type="email" id="email" name="email" onclick="napraviemail()"/>
+			<input type="email" id="email" name="email" onclick="napraviEmail()"/>
 			<br><br>
 		
 			<button type="submit" value="Prijavi se" onclick="">Prijavi se</button>

@@ -92,10 +92,10 @@
   }
   
     function snimiPodatke() {
-  
+      
       var valuta = document.getElementById("valuta").value;
       var indexRazmjene = document.getElementById("indexrazmjene").value;
-  
+
       if (typeof(Storage) !== "undefined") {
   
         localStorage.setItem("valuta", valuta);
@@ -130,7 +130,8 @@
       } 
   
     }
-  
+    
+   /*
     function konverzija() {
   
 
@@ -147,11 +148,12 @@
   
       for(i in rates) {
         
-       /*
-       */
+      
+       
   
         console.log(i + ':' + rates[i]);
       }
   
    
 }
+*/
