@@ -5,20 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title></title>
-	<link rel="stylesheet" href="stilovi.css">
+	<script type="text/javascript" src="mojSkript.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="external/jquery/jquery.js"></script>
+ 	<script src="jquery-ui.js"></script>
+   <link rel="stylesheet" type="text/css" href="stilovi.css">
+   <link href="jquery-ui.css" rel="stylesheet">
+   
 </head>
 <body>
 
-<div class="sidenav">	
-	sssss
-</div>
 
+<div class="sidenav">	
+	<div class="container">
+	<h2>Konverter Valuta</h2>
+	<form action="">
+		<div class="left">
+		<input type="text" id="valuta" style="color:white"> Code valute <br>
+		<input type="text" id="indexrazmjene"> Odnos sa Eurima 
+		<br>
+		<button type="submit" value="submit">Snimi</button>
+	<div id="accordion">
+		<h3>USD</h3>
+		<p>USD-EUR 0.86</p>
+		<h3>GBP</h3>
+		<p>USD-GBP 1.14</p>
+		<h3>JPY</h3>
+		<p>EUR-JPY 0.0078</p><br>
+		
+	</div>
+	<div>
+		
+		<input type="text" id="valuta" placeholder="CODE Izvorne valute">  <br>
+		<input type="text" id="indexrazmjene" placeholder="Iznos razmjene"> 
+		<br>
+		<input type="text" id="valuta" placeholder="CODE Destinacijske valute"> <br>
+		<button name="snimi" value="snimi">Konvertuj</button>
+		<br>
+		<input type="text" id="indexrazmjene"> Obračunati iznos
+		</div>
+		</div>
+</div>
+</div>
 <section id="main">
 	<div class="header">
 		<div class="container">
 			<h2>ISPIT</h2>
 		</div>
-	</div>
 	<ul>
 		<li><a href="Programiranje I">Programiranje I</a></li>
 		<li><a href="WRD">WRD</a></li>
@@ -26,7 +59,7 @@
 		<li><a href="SP">SP</a></li>
 	</ul>
 <div class="sign-in">
-	<form action="">
+	
 		<h3><center>PRIJAVI SE</center></h3>
 		<br>
 		<hr>
@@ -58,67 +91,31 @@
 			<input type="email" id="email" name="email" onclick="napraviemail()"/>
 			<br><br>
 		
-			<input type="submit" value="Prijavi se" onclick=""/>
+			<button type="submit" value="Prijavi se" onclick="">Prijavi se</button>
+			<br><br>
 		
-	</form>	
+</div>
+</form>
 
-<div class="sadrzaj">
-    <div class="lijevi">
-        <div class="lijeviUnitrasnji">
-<h2>Konverter Valuta</h2>
-
-<div class="lijeviSrednji">
-<input type="text" id="valuta"> Code valute <br>
-<input type="text" id="indexrazmjene"> Odnos sa Eur
-<br>
-<button name="snimi" value="snimi" onclick="snimiPodatke()">Snimi</button>
-<br><br>
-<div id="accordion" >
-  <!--
-    <h3>USD</h3>
-    <div>USD-EUR 0.86</div>
-    <h3>GBP</h3>
-    <div>GBP-EUR 1.14</div>
-    <h3>JPY</h3>
-    <div>JPY-EUR 0.0078</div>
-  -->
-  </div>
-</div>
-<div class="lijeviDonji">
-    <input type="text" id="valuta" placeholder="CODE Izvorne valute">  <br>
-    <input type="text" id="indexrazmjene" placeholder="Iznos razmjene"> 
-    <br>
-    <input type="text" id="valuta" placeholder="CODE Destinacijske valute" class="valuta"> <br>
-    <br>
-    <button name="snimi" value="snimi" onclick="konverzija()">Konvertuj</button>
-    <br>
-    <br>
-    <input type="text" id="indexrazmjene"> Obračunati iznos
-  
-</div>
-</div>
+	</div>
+	</div>
+	
+	<div id="main-footer">
+		<div class="container">
+			<div>
+				<h2>&copy; Copyright FIT Ispit 2018</h2>
+			</div>
+		</div>
 </section>
+<br><br>
 
-<footer>
-	<span>&copy; Copjiojkjk</span>
-</footer>
-
-
-<!-- <section id="header">
-	<div class="container">
-	<div class="container-fluid">
-		<h3>ISPIT</h3>
-	</div>
-</div>
-		<ul>
-			<li><a href="Programiranje I">Programiranje I</a></li>
-			<li><a href="WRD">WRD</a></li>
-			<li><a href="Klikni za jos">Klikni za jos</a></li>
-			<li><a href="SP">SP</a></li>
-		
-	</div>
-</section> -->
-
+<br><br>
 
 </body>
+<script>
+	$( "#accordion" ).accordion({
+	heightStyle: "content"
+	
+});
+</script>
 </html>
