@@ -10,11 +10,12 @@ body {
 }
 
 .sidenav {
-	margin-top: 10px;
+	display:inline-block;
 	background: #445461;
 	width: 30%;
-	height: 100%;
-	position: fixed;
+	height: 100vh;
+	position: absolute;
+	top: 0;
 }
 
 .sidenav h2 {
@@ -35,6 +36,11 @@ body {
 #main {
 	display: inline-block;
 	background: white;
+	position:absolute;
+	left: 15%;
+	top: 15%;
+	z-index: -1;
+
 }
 
 #main .header .container{
@@ -82,20 +88,6 @@ ul li a:hover {
 	background: white;
 }
 
-form {
-	width: 100%;
-}
-
-form .left {
-	color: white;
-}
-
-form .left button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
 
 input[type="text"] {
 	padding-right: 20px;
@@ -116,6 +108,3 @@ input[type="text"] {
 	border-radius: 10px;
 }
 
-input[type="text"] { 
-	color: black !important;
-}

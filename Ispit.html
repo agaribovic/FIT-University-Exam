@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title></title>
 	<script type="text/javascript" src="mojSkript.js"></script>
-	<link rel="stylesheet" href="style.css">
 	<script src="external/jquery/jquery.js"></script>
  	<script src="jquery-ui.js"></script>
    <link rel="stylesheet" type="text/css" href="stilovi.css">
@@ -19,12 +18,13 @@
 <div class="sidenav">	
 	<div class="container">
 	<h2>Konverter Valuta</h2>
-	<form action="">
+
 		<div class="left">
-		<input type="text" id="valuta" style="color:white"> Code valute <br>
+		<input type="text" id="valuta"> Code valute <br>
 		<input type="text" id="indexrazmjene"> Odnos sa Eurima 
 		<br>
-		<button type="submit" value="submit" onclick="snimiPodatke()">Snimi</button>
+		<button type="submit" value="submit" onclick="snimiPodatke()" style="margin-left:80px">Snimi</button>
+
 	<div id="accordion">
 		<!--
 		<h3>USD</h3>
@@ -41,7 +41,7 @@
 		<input type="text" id="indexrazmjene" placeholder="Iznos razmjene"> 
 		<br>
 		<input type="text" id="valuta" placeholder="CODE Destinacijske valute"> <br>
-		<button name="snimi" value="snimi">Konvertuj</button>
+		<button name="snimi" value="snimi" style="margin-left:70px">Konvertuj</button>
 		<br>
 		<input type="text" id="indexrazmjene"> Obračunati iznos
 		</div>
